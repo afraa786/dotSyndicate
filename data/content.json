@@ -1,0 +1,106 @@
+{
+  "blogPosts": [
+    {
+      "categories": [
+        "Market Insights"
+      ],
+      "date": "Jan 25, 2025",
+      "title": "Top 7 Things to Look for When Booking a Hotel",
+      "description": "A new premium residential complex opens with modern amenities and ocean views.",
+      "image": "/images/blog/blog-1.jpg"
+    },
+    {
+      "categories": [
+        "Market Insights",
+        "Hotel Booking"
+      ],
+      "date": "Jan 25, 2025",
+      "title": "Hidden Gems Near Our Hotel You Can't Miss",
+      "description": "Market trends show increased interest from both local and foreign investors.",
+      "image": "/images/blog/blog-2.jpg"
+    },
+    {
+      "categories": [
+        "Market Insights"
+      ],
+      "date": "Jan 25, 2025",
+      "title": "What to Expect During Your Stay",
+      "description": "Office and retail spaces now open for lease in prime Masaki locations.",
+      "image": "/images/blog/blog-3.jpg"
+    },
+    {
+      "categories": [
+        "Travel Tips"
+      ],
+      "date": "Feb 10, 2025",
+      "title": "Essential Packing Guide for Tropical Destinations",
+      "description": "Everything you need to know before heading to your dream beach getaway.",
+      "image": "/images/blog/blog-1.jpg"
+    },
+    {
+      "categories": [
+        "Hotel Booking"
+      ],
+      "date": "Feb 18, 2025",
+      "title": "How to Get the Best Deals on Luxury Hotels",
+      "description": "Insider tips on scoring premium rooms at a fraction of the listed price.",
+      "image": "/images/blog/blog-2.jpg"
+    },
+    {
+      "categories": [
+        "Travel Tips",
+        "Market Insights"
+      ],
+      "date": "Mar 05, 2025",
+      "title": "Sustainable Travel: A Guide for Conscious Explorers",
+      "description": "How to enjoy world-class hospitality while minimizing your carbon footprint.",
+      "image": "/images/blog/blog-3.jpg"
+    }
+  ],
+  "promoBanners": [
+    {
+      "tag": "HSBCCC",
+      "title": "UP TO 12% Off",
+      "subtitle": "on Hotels Booking in Zanzibar and Bali",
+      "imagePath": "/images/promos/hsbc.jpg"
+    },
+    {
+      "tag": "TSFESTIVE",
+      "title": "UP TSh 2500 Off",
+      "subtitle": "on Hotels Booking",
+      "imagePath": "/images/promos/tsfestive.jpg"
+    },
+    {
+      "tag": "TRAVELSIMBA",
+      "title": "UP TO 40% Off",
+      "subtitle": "on Villa Booking in Zanzibar",
+      "imagePath": "/images/promos/travelsimba.jpg"
+    }
+  ],
+  "destinations": [
+    {
+      "name": "Dubai",
+      "imagePath": "/images/dubai.jpg"
+    },
+    {
+      "name": "Maldives",
+      "imagePath": "/images/maldives.jpg"
+    },
+    {
+      "name": "Maasai Mara",
+      "imagePath": "/images/maasai.jpg"
+    },
+    {
+      "name": "Vietnam",
+      "imagePath": "/images/vietnam.jpg"
+    },
+    {
+      "name": "Mumbai",
+      "imagePath": "/images/mumbai.jpg"
+    },
+    {
+      "name": "Rome",
+      "imagePath": "/images/rome.jpg"
+    }
+  ]
+}
