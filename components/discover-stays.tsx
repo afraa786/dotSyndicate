@@ -11,87 +11,47 @@ export default function DiscoverStays() {
           </h2>
         </div>
 
-<div className="flex flex-col lg:flex-row gap-6 lg:gap-[28px]">
+        <div className="flex flex-col lg:flex-row gap-6 lg:gap-[28px]">
 
-  <div className="
-      grid grid-cols-2 gap-4
-      sm:flex sm:flex-col
-      lg:flex lg:flex-col
-      lg:gap-[28px]
-  ">
+          <div className="flex flex-col gap-4 sm:gap-6 lg:gap-[28px]">
 
-    <div className="
-        contents
-        sm:flex sm:flex-row sm:gap-6
-        lg:flex lg:flex-row lg:gap-[28px]
-    ">
-      <StayCard
-        label="Hotel"
-        imagePath="/images/hotel.jpg"
-        className="
-          h-[160px]
-          sm:h-[244px]
-          w-full
-          sm:w-[520px]
-        "
-      />
+            <div className="grid grid-cols-2 gap-4 sm:flex sm:flex-row sm:gap-6 lg:gap-[28px]">
+              <StayCard
+                label="Hotel"
+                imagePath="/images/hotel.jpg"
+                className="h-[160px] sm:h-[244px] w-full sm:w-[520px]"
+              />
 
-      <StayCard
-        label="Resort"
-        imagePath="/images/resort.jpg"
-        className="
-          h-[160px]
-          sm:h-[244px]
-          w-full
-          sm:w-[380px]
-        "
-      />
-    </div>
+              <StayCard
+                label="Resort"
+                imagePath="/images/resort.jpg"
+                className="h-[160px] sm:h-[244px] w-full sm:w-[380px]"
+              />
+            </div>
 
-    <div className="
-        contents
-        sm:flex sm:flex-row sm:gap-6
-        lg:flex lg:flex-row lg:gap-[28px]
-    ">
-      <StayCard
-        label="Lodge"
-        imagePath="/images/lodge.jpg"
-        className="
-          h-[160px]
-          sm:h-[244px]
-          w-full
-          sm:w-[380px]
-        "
-      />
+            <div className="grid grid-cols-2 gap-4 sm:flex sm:flex-row sm:gap-6 lg:gap-[28px]">
+              <StayCard
+                label="Lodge"
+                imagePath="/images/lodge.jpg"
+                className="h-[160px] sm:h-[244px] w-full sm:w-[380px]"
+              />
 
-      <StayCard
-        label="Villa"
-        imagePath="/images/villa.jpg"
-        className="
-          h-[160px]
-          sm:h-[244px]
-          w-full
-          sm:w-[520px]
-        "
-      />
-    </div>
+              <StayCard
+                label="Villa"
+                imagePath="/images/villa.jpg"
+                className="h-[160px] sm:h-[244px] w-full sm:w-[520px]"
+              />
+            </div>
 
-  </div>
+          </div>
 
-  <StayCard
-    label="AirBnb"
-    imagePath="/images/airbnb.jpg"
-    className="
-      col-span-2
-      h-[200px]
-      sm:h-[300px]
-      lg:w-[380px]
-      lg:h-[516px]
-    "
-  />
+          <StayCard
+            label="AirBnb"
+            imagePath="/images/airbnb.jpg"
+            className="h-[200px] sm:h-[300px] lg:w-[380px] lg:h-[516px]"
+          />
 
-</div>
-
+        </div>
 
       </div>
     </section>
