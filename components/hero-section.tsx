@@ -22,7 +22,7 @@ export default function HeroSection() {
 />
 
         <div className="relative z-10 flex h-full items-center sm:items-center pt-[-20px] sm:pt-0">
-          <div className="max-w-6xl px-4 sm:px-6 lg:px-16 w-full">
+          <div className="max-w-6xl px-4 sm:px-6 lg:px-16 w-full pb-40 sm:pb-0">
 
             <h1 className="max-w-xl font-serif italic leading-tight text-white text-3xl sm:text-4xl md:text-6xl lg:text-7xl">
               Chase elegance, <br />
@@ -42,7 +42,7 @@ export default function HeroSection() {
         </div>
 
       
-        <div className="absolute bottom-6 left-4 sm:hidden z-20 w-[85%]">
+        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 sm:hidden z-20 w-[90%] max-w-md">
           <SearchBar />
         </div>
 
