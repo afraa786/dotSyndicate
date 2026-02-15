@@ -113,7 +113,8 @@ export default function TravelSimbaExclusives() {
 
   return (
     <section className="w-full bg-background py-10 sm:py-14 lg:py-16">
-      <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+     <div className="mx-auto w-full max-w-[1425px] px-4 sm:px-6 lg:px-8">
+
 
         <h2 className="text-center md:text-left font-serif italic text-2xl sm:text-3xl lg:text-5xl text-foreground">
           Travel Simba Exclusives
@@ -121,7 +122,7 @@ export default function TravelSimbaExclusives() {
 
         <div className="relative mt-6 sm:mt-8">
 
-          {/* Mobile Arrows */}
+     
           <button
             onClick={scrollLeft}
             disabled={activeIndex === 0}

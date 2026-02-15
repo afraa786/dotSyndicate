@@ -70,7 +70,7 @@ export default function ExploreDestinations() {
     <section className="bg-background py-6 sm:py-16 px-2 sm:px-6 lg:px-16">
       <div className="mx-auto w-full max-w-[1400px]">
 
-        <h1 className="font-serif italic text-lg sm:text-3xl md:text-4xl lg:text-5xl text-foreground px-1 sm:px-0">
+        <h1 className="font-serif italic text-lg sm:text-3xl md:text-5xl lg:text-5xl text-foreground px-1 sm:px-0">
           Explore Popular Destinations
         </h1>
 

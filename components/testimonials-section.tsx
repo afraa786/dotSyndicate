@@ -122,7 +122,31 @@ export default function TestimonialsSection() {
         </div>
 
        
-        <div className="grid gap-6 sm:grid-cols-2 lg:w-[62%]">
+        {/* Desktop Grid */}
+<div className="hidden sm:grid gap-6 sm:grid-cols-2 lg:w-[62%]">
+  {testimonials.map((testimonial, index) => (
+    <TestimonialCard
+      key={index}
+      text={testimonial.text}
+      name={testimonial.name}
+      location={testimonial.location}
+      featured={testimonial.featured}
+    />
+  ))}
+</div>
+
+{/* Mobile Vertical Scroll */}
+<div className="flex flex-col gap-6 sm:hidden">
+  {testimonials.map((testimonial, index) => (
+    <TestimonialCard
+      key={index}
+      text={testimonial.text}
+      name={testimonial.name}
+      location={testimonial.location}
+      featured={testimonial.featured}
+    />
+  ))}
+
           {testimonials.map((testimonial, index) => (
             <TestimonialCard
               key={index}

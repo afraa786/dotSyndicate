@@ -28,20 +28,13 @@ export default function StayCard({ label, imagePath, className = "" }: StayCardP
       <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
       
  
-      <div className="absolute bottom-0 left-0 p-6">
-        <h3 className="font-serif text-2xl italic text-white">
+      <div className="absolute top-0 left-0 p-6">
+        <h3 className="font-canva text-2xl text-white">
           {label}
         </h3>
       </div>
       
-    
-      <div className="absolute right-4 top-4 font-serif text-6xl italic text-white/20">
-        {(label === "Hotel" && "01") ||
-         (label === "Resort" && "02") ||
-         (label === "AirBnb" && "03") ||
-         (label === "Lodge" && "04") ||
-         (label === "Villa" && "05")}
-      </div>
+ 
     </motion.div>
   )
 }
