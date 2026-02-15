@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "public",
+			"path": "../../../Documents/next-js/public"
+		},
+		{
+			"name": "admin",
+			"path": ".."
+		}
+	],
+	"settings": {}
+}

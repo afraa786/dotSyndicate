@@ -24,7 +24,7 @@ export default function DiscoverStays() {
 
               <StayCard
                 label="Resort"
-                imagePath="/images/resort.jpg"
+                imagePath="https://hotelmahalaxmi.in/assets/img/slider-2.jpg"
                 className="h-[160px] sm:h-[244px] w-full sm:w-[380px]"
               />
             </div>
