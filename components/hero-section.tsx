@@ -18,7 +18,7 @@ export default function HeroSection() {
           className="object-cover brightness-[0.95]"
         />
 
-        <div className="absolute top-0 left-0 h-full w-[55%] z-[2] bg-gradient-to-r from-[#3b82f6]/55 to-transparent pointer-events-none" />
+        <div className="absolute top-0 left-0 h-full w-[35%] z-[2] bg-gradient-to-r from-[#3b82f6]/55 to-transparent pointer-events-none" />
 
         <div className="relative z-[3] h-full flex items-start">
           <div className="max-w-6xl px-12 lg:px-16 w-full pt-[190px]">
@@ -38,10 +38,10 @@ export default function HeroSection() {
       </section>
 
 
-     <div className="relative z-10 -mt-20 ml-[500px]">
+     <div className="relative z-10 -mt-20 ml-[600px]">
 
 
-     <div className="bg-white rounded-2xl shadow-xl flex items-center divide-x divide-gray-200 w-[820px] h-[66px]">
+     <div className="bg-white rounded-2xl shadow-xl flex items-center divide-x divide-gray-200 w-[850px] h-[66px]">
 
 
           <div className="flex-1 flex items-center gap-3 px-6 py-4">
