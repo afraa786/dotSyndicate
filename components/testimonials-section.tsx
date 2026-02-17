@@ -1,3 +1,5 @@
+"use client"
+
 import { Star } from "lucide-react"
 
 const testimonials = [
@@ -52,49 +54,65 @@ function TestimonialCard({
 }) {
   return (
     <div
-      className={`rounded-3xl p-7 transition-all ${
-        featured
-          ? "bg-[#1f6fa8] text-white shadow-lg"
-          : "bg-white border border-gray-200 text-[#1a1a2e]"
-      }`}
+      className={`
+        w-[414px]
+        h-[225px]
+        rounded-[24px]
+        p-6
+        transition-all duration-300
+        
+        ${
+          featured
+            ? `
+              bg-[#1f6fa8] 
+              text-white 
+              shadow-[0_25px_60px_rgba(31,111,168,0.35)]
+              scale-[1.02]
+            `
+            : `
+              bg-white 
+              border border-gray-200
+              shadow-[0_12px_35px_rgba(0,0,0,0.10)]
+              hover:shadow-[0_20px_45px_rgba(0,0,0,0.15)]
+            `
+        }
+      `}
     >
-
+      {/* Stars */}
       <div className="mb-5 flex gap-1">
         {Array.from({ length: 5 }).map((_, i) => (
           <Star
             key={i}
-            className={`h-5 w-5 ${
-              featured
-                ? "fill-white text-white"
-                : "fill-[#1f6fa8] text-[#1f6fa8]"
-            }`}
+            className={`
+              h-5 w-5
+              ${
+                featured
+                  ? "fill-white text-white"
+                  : "fill-[#1f6fa8] text-[#1f6fa8]"
+              }
+            `}
           />
         ))}
       </div>
 
- 
+      {/* Text */}
       <p
-        className={`text-[15px] leading-relaxed ${
-          featured ? "text-white/90" : "text-gray-600"
-        }`}
+        className={`
+          text-[14px] font-normal leading-[20px] text-[#57595F] font-['Helvetica Neue']
+
+          ${featured ? "text-white/90" : "text-gray-600"}
+        `}
       >
         {text}
       </p>
 
-
+      {/* User */}
       <div className="mt-6">
-        <p
-          className={`font-medium ${
-            featured ? "text-white" : "text-[#1a1a2e]"
-          }`}
-        >
+        <p className={`font-semibold ${featured ? "text-white" : "text-[#1a1a2e]"}`}>
           {name}
         </p>
-        <p
-          className={`text-sm ${
-            featured ? "text-white/70" : "text-gray-400"
-          }`}
-        >
+
+        <p className={`text-sm ${featured ? "text-white/70" : "text-gray-400"}`}>
           {location}
         </p>
       </div>
@@ -105,57 +123,39 @@ function TestimonialCard({
 export default function TestimonialsSection() {
   return (
     <section className="bg-white px-6 py-20 lg:px-20 lg:py-28">
-      <div className="mx-auto max-w-7xl flex flex-col gap-16 lg:flex-row">
+      <div className="mx-auto max-w-7xl">
 
-        <div className="lg:w-[38%]">
-          <h2 className="font-serif text-5xl italic leading-tight text-[#1a1a2e]">
-            Trusted By Many,
-            <br />
-            loved by All
-          </h2>
+        {/* Layout container */}
+        <div className="flex flex-col lg:flex-row gap-16">
 
-          <p className="mt-6 text-[16px] leading-relaxed text-gray-500">
-            Our Clients success stories reflect our commitment to excellence.
-            See how we’ve helped them find their dream homes, sustainable
-            investments and perfect getaways.
-          </p>
-        </div>
+          {/* LEFT TEXT */}
+          <div className="lg:w-[35%]">
+            <h2 className="font-serif italic text-[48px] leading-[1.1] text-[#1a1a2e]">
+              Trusted By Many,
+              <br />
+              loved by All
+            </h2>
 
-       
-        {/* Desktop Grid */}
-<div className="hidden sm:grid gap-6 sm:grid-cols-2 lg:w-[62%]">
-  {testimonials.map((testimonial, index) => (
-    <TestimonialCard
-      key={index}
-      text={testimonial.text}
-      name={testimonial.name}
-      location={testimonial.location}
-      featured={testimonial.featured}
-    />
-  ))}
+            <p className="mt-6 italic text-[16px] leading-relaxed text-gray-500 max-w-md">
+              Our Clients success stories reflect our commitment to excellence.
+              See how we’ve helped them find their dream homes, sustainable
+              investments and perfect getaways.
+            </p>
+          </div>
+
+          {/* RIGHT GRID */}
+     {/* RIGHT GRID */}
+<div className="lg:w-[65%] flex justify-center">
+
+  <div className="grid grid-cols-1 sm:grid-cols-[414px_414px] gap-x-8 gap-y-8 justify-center">
+    {testimonials.map((testimonial, index) => (
+      <TestimonialCard key={index} {...testimonial} />
+    ))}
+  </div>
+
 </div>
 
-{/* Mobile Vertical Scroll */}
-<div className="flex flex-col gap-6 sm:hidden">
-  {testimonials.map((testimonial, index) => (
-    <TestimonialCard
-      key={index}
-      text={testimonial.text}
-      name={testimonial.name}
-      location={testimonial.location}
-      featured={testimonial.featured}
-    />
-  ))}
 
-          {testimonials.map((testimonial, index) => (
-            <TestimonialCard
-              key={index}
-              text={testimonial.text}
-              name={testimonial.name}
-              location={testimonial.location}
-              featured={testimonial.featured}
-            />
-          ))}
         </div>
 
       </div>

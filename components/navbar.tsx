@@ -14,37 +14,32 @@ const navLinks = [
   { label: "Bookings4Education", href: "#" },
 ]
 
-export default function Navbar() {
+export default function AppHeader() {
   const [mobileOpen, setMobileOpen] = useState(false)
 
   return (
-    <nav className="absolute inset-x-0 top-0 z-50 w-full px-6 pt-5">
-      
+    <nav className="absolute inset-x-0 top-0 z-50 w-full lg:px-16 px-6  lg:py-10 py-6 ">
 
-
- 
       <div className="flex w-full items-center justify-between">
 
-  
         <Link href="/" className="flex-shrink-0">
           <Image
             src="/images/logo.png"
             alt="Travel Simba"
-            width={160}
-            height={60}
+            width={113}
+            height={48}
             priority
             className="object-contain"
           />
         </Link>
 
-
-        <div className="hidden xl:flex items-center gap-10 rounded-none border border-white/20 bg-white/10 px-2 py-3 backdrop-blur-md">
+        <div className="hidden xl:flex items-center gap-6 rounded-lg border border-white/10 bg-white/10 px-8 py-2.5 backdrop-blur-md">
 
           {navLinks.map((link) => (
             <Link
               key={link.label}
               href={link.href}
-              className="text-sm font-medium text-white whitespace-nowrap transition hover:text-white/80"
+              className="text-[13px] font-medium text-white/90 whitespace-nowrap transition hover:text-white"
             >
               {link.label}
             </Link>
@@ -52,47 +47,43 @@ export default function Navbar() {
 
         </div>
 
+        <div className="hidden xl:flex items-center gap-3">
 
-    
-        <div className="hidden xl:flex items-center gap-4">
-
-          <button className="flex items-center gap-2 rounded-none border border-white/20 bg-white/10 px-4 py-2 backdrop-blur-md transition hover:bg-white/20">
+          <button className="flex items-center gap-2 rounded-lg px-3 py-2 backdrop-blur-md transition hover:bg-white/100">
 
             <Image
               src="/flags/flag.png"
               alt="US Flag"
-              width={24}
-              height={16}
-              className="object-cover"
+              width={20}
+              height={14}
+              className="object-cover "
             />
 
             <span className="text-sm font-medium text-white">
               USD
             </span>
 
-            <ChevronDown className="h-4 w-4 text-white" />
+            <ChevronDown className="h-3.5 w-3.5 text-white/80" />
 
           </button>
 
-
-
           <button
             aria-label="Wishlist"
-            className="flex h-10 w-10 items-center justify-center rounded-none border border-white/20 bg-white/10 backdrop-blur-md transition hover:bg-white/20"
+            className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 backdrop-blur-md transition hover:bg-white/20"
           >
             <Heart className="h-5 w-5 text-white" />
           </button>
 
           <Link
             href="#"
-            className="flex items-center gap-4 rounded-none bg-[#2E86AB] px-3 py-2 font-medium text-white transition hover:bg-[#256b8a]"
+            className="flex items-center gap-3 rounded-full bg-[#0ea5e9] pl-5 pr-1.5 py-1.5 font-large text-white transition hover:bg-blue"
           >
 
-            SIGN IN NOW
+            <span className="text-xs font-normal tracking-wide">SIGN IN NOW</span>
 
-            <span className="flex h-8 w-8 items-center justify-center rounded-none bg-white">
+            <span className="flex h-8 w-8 items-center justify-center rounded-full bg-white shadow-sm">
 
-              <ArrowRight className="h-4 w-4 text-[#2E86AB]" />
+              <ArrowRight className="h-4 w-4 text-[#0ea5e9]" />
 
             </span>
 
@@ -100,8 +91,6 @@ export default function Navbar() {
 
         </div>
 
-
-      
         <button
           onClick={() => setMobileOpen(!mobileOpen)}
           className="xl:hidden text-white"
@@ -110,7 +99,6 @@ export default function Navbar() {
         </button>
 
       </div>
-
 
       {mobileOpen && (
 
@@ -131,23 +119,22 @@ export default function Navbar() {
 
             ))}
 
-
             <div className="mt-4 flex items-center gap-4 border-t border-white/10 pt-4">
 
-              <button className="flex items-center gap-2 text-white">
+              <button className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 backdrop-blur-md transition hover:bg-white/20">
 
                 <Image
                   src="/flags/flag.png"
                   alt="US Flag"
-                  width={24}
-                  height={16}
+                  width={48}
+                  height={48}
                   className="object-cover"
                 />
 
                 USD
               </button>
 
-              <Heart className="h-5 w-5 text-white" />
+              <Heart className="h-48 w-48 text-white" />
 
             </div>
 

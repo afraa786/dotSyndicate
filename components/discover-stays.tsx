@@ -1,4 +1,5 @@
 import StayCard from "@/components/stay-card"
+import Image from "next/image"
 
 export default function DiscoverStays() {
   return (
@@ -9,6 +10,14 @@ export default function DiscoverStays() {
           <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl italic text-foreground">
             Discover your Favorite Stay
           </h2>
+
+          <Image
+            src="/images/whatsapp.svg"
+            alt="WhatsApp"
+            width={73}
+            height={73}
+            className="text-8xl sm:text-6xl lg:text-5xl"
+          />
         </div>
 
         <div className="flex flex-col lg:flex-row gap-6 lg:gap-[28px]">

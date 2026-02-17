@@ -25,7 +25,6 @@ export default function Page() {
       <BlogSection />
       <CtaSection />
       <Footer />
-      <WhatsAppButton />
     </main>
   )
 }
