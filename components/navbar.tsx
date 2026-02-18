@@ -27,19 +27,25 @@ export default function AppHeader() {
   }, [])
 
   return (
-    <nav
-      className={`
-        fixed z-50 transition-all duration-700 ease-[cubic-bezier(0.4,0,0.2,1)]
-        ${isScrolled
-          ? "top-4 left-1/2 -translate-x-1/2 w-[94%] max-w-[1350px] rounded-2xl bg-[#0b1d3a] shadow-2xl py-3 lg:py-4 px-6 lg:px-12"
-          : "top-0 left-0 w-full rounded-none bg-transparent shadow-none py-6 lg:py-10 px-6 lg:px-16"
-        }
-      `}
-    >
+<nav
+  className={`
+    fixed top-4 left-1/2 -translate-x-1/2
+    w-[101%] max-w-[1450px]
+    rounded-2xl
+    py-3 lg:py-6
+    px-6 lg:px-12
+    z-50
+    transition-all duration-700 ease-[cubic-bezier(0.4,0,0.2,1)]
+    ${isScrolled
+      ? "bg-[#0b1d3a] shadow-2xl"
+      : "bg-transparent shadow-none"
+    }
+  `}
+>
+
 
       <div className="flex w-full items-center justify-between">
 
-        {/* LOGO */}
         <Link href="/" className="flex-shrink-0">
           <Image
             src="/images/logo.png"
@@ -51,7 +57,6 @@ export default function AppHeader() {
           />
         </Link>
 
-        {/* DESKTOP LINKS */}
         <div className={`hidden lg:flex items-center gap-6 rounded-lg px-8 py-2.5 ${isScrolled ? "bg-transparent" : "bg-white/10 backdrop-blur-md border border-white/10"}`}>
           {navLinks.map((link) => (
             <Link
@@ -64,7 +69,6 @@ export default function AppHeader() {
           ))}
         </div>
 
-        {/* RIGHT SIDE */}
         <div className="hidden lg:flex items-center gap-3">
 
           <button className={`flex items-center gap-2 rounded-lg px-3 py-2 transition hover:bg-white/20 ${isScrolled ? "" : "backdrop-blur-md"}`}>
@@ -98,7 +102,6 @@ export default function AppHeader() {
 
         </div>
 
-        {/* MOBILE BUTTON */}
         <button
           onClick={() => setMobileOpen(!mobileOpen)}
           className="lg:hidden text-white"
@@ -108,7 +111,6 @@ export default function AppHeader() {
 
       </div>
 
-      {/* MOBILE MENU */}
       {mobileOpen && (
         <div className="mt-6 rounded-xl bg-[#112240] p-6 lg:hidden">
           <div className="flex flex-col gap-4">

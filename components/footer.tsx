@@ -27,21 +27,22 @@ const accountLinks = [
 
 export default function Footer() {
   return (
-    <footer className="rounded-t-3xl bg-[#E9EDF2]">
+    <footer className="rounded-none bg-[#E9EDF2]">
       <div className="w-full px-4 pb-8 pt-16">
         <div className="grid grid-cols-1 gap-10 text-center sm:grid-cols-2 sm:text-left lg:grid-cols-4 lg:gap-16">
 
-          {/* Column 1 */}
+          
           <div className="flex flex-col items-center sm:items-start">
-            <Image
-              src="/images/logo-dark.png"
-              alt="Travel Simba Logo"
-              width={160}
-              height={50}
-              className="mb-4 h-auto w-auto object-contain"
-              priority
-            />
-
+              <Link href="#hero-section">
+              <Image
+                src="/images/logo-dark.png"
+                alt="Travel Simba Logo"
+                width={160}
+                height={50}
+                className="mb-4 h-auto w-auto object-contain cursor-pointer"
+                priority
+                />
+              </Link>
             <div className="flex items-center gap-4">
               <Link href="#" className="text-[#1D8CC7] hover:text-[#156a9a]">
                 <Twitter size={20} />

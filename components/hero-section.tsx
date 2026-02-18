@@ -47,7 +47,7 @@ your dream stay
 
 
      
-       <div className="hidden sm:flex absolute bottom-[20px] right-[10px] z-[10] w-[95%] sm:w-[80%] md:w-[70%] lg:w-[58%] max-w-[850px]">
+       <div className="hidden sm:flex absolute bottom-[10px] right-[10px] z-[10] w-[95%] sm:w-[80%] md:w-[70%] lg:w-[58%] max-w-[850px]">
           <div className="w-full bg-white rounded-2xl shadow-xl border-2 border-gray-300 flex items-center divide-x divide-gray-200 h-[66px] overflow-hidden">
 
             <div className="flex-1 flex items-center gap-3 px-6 py-4 min-w-0">
